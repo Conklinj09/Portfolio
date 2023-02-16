@@ -8,6 +8,8 @@ import Footer from './components/Footer/Footer.js'
 import bg from './assets/cover/cover-image1.jpg'
 import './App.css'
 
+// Is this working
+
 function App() {
     const [pages] = 
     useState([
