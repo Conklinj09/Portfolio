@@ -1,18 +1,18 @@
 import React from 'react';
 import { removeHyphensAndCapitalize } from '../../utils/helpers';
 
-function Project({ project }) {
+function Resume ({ resume }) {
 
-  const { name, repo, link, description } = project;
+  const { name, repo, link, description } = resume;
 
   return (
-    <div className="project" key={name}>
+    <div className="resume" key={name}>
       <img
         // src={require(`../../assets/projects/${name}.jpg`).default}
         alt={removeHyphensAndCapitalize(name)}
-        className="project-bg"
+        className="resume-bg"
       />
-      <div className="project-text">
+      <div className="resume-text">
         <h3>
           <a href={link}>{removeHyphensAndCapitalize(name)}</a>{' '}
           <a href={repo}>
@@ -25,4 +25,4 @@ function Project({ project }) {
   );
 }
 
-export default Project;
+export default Resume;

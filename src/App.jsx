@@ -7,8 +7,12 @@ import Nav from './components/Nav/nav.js'
 import Footer from './components/Footer/Footer.js'
 import bg from './assets/cover/cover-image1.jpg'
 import './App.css'
+import styled from "styled-components";
 
 // Is this working
+
+
+
 
 function App() {
     const [pages] = 
@@ -27,17 +31,20 @@ function App() {
           <Nav pages= {pages} setCurrentPage= {setCurrentPage} currentPage= {currentPage}>
 
           </Nav>
+
+      
         </Header>
-        <main> 
+        <main>
+
           <Page currentPage= {currentPage}>
 
           </Page>
         </main>
         <Footer />
        </div>
+      );
+    }
 
-);
-}
 
 
      

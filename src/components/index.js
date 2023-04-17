@@ -1,3 +1,11 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+import App from "./App";
+
+
+
+
 function Header({ eggsNHam }) {
 return (
     <header>
@@ -14,6 +22,13 @@ return (
           </header>
     );
  }
+
+
+
+ 
+ const rootElement = document.getElementById("root");
+ ReactDOM.render(<App />, rootElement);
+
         
 export default Header;
     

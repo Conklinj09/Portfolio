@@ -4,14 +4,7 @@ function Footer() {
             name: 'Jeanette',
             link: "https://github.com/Conklinj09"
         },
-        {
-            name: 'John',
-            link: "https://github.com/"
-        },
-        {
-            name: 'Bella',
-            link: "https://github.com/"
-        }
+        
     ];
 
     return data
