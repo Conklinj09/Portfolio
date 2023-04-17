@@ -1,6 +1,12 @@
 .App {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.App::-webkit-scrollbar {
+  display: none;
 }
 
 .App-logo {
@@ -42,6 +48,40 @@
   height: 100vh;
 }
 
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 10vw;
+}
+
 h1 {
   margin: 0;
+}
+
+/* NAV */
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.flex-row {
+  display: flex;
+  list-style-type: none;
+
+}
+
+.flex-row li {
+  padding: 0 8px;
+}
+
+/* ABOUT ME */
+
+.headshot {
+  display: block;
+  border-radius: 8px;
+  width: 25vw;
+  height: auto;
+
 }
