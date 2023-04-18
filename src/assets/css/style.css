@@ -352,3 +352,8 @@ main {
   font-family: sans-serif;
   text-align: center;
 }
+
+.project-image {
+  max-height: 20vw; 
+  max-width: 20vw; 
+}

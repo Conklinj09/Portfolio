@@ -1,3 +1,22 @@
+ import seo from '../../assets/images/Horiseon.png' 
+ import passgen from '../../assets/images/Password-Generator.jpg'
+ import codequiz from '../../assets/images/Coding-Quiz.jpg'
+ import workdayscheduler from '../../assets/images/Workday-Scheduler.jpeg'
+ import weatherdashboard from '../../assets/images/Weather-Dashboard.png'
+ import flickgenie from '../../assets/images/flickgenie.jpg'
+ import proreadmegen from '../../assets/images/Proreadmegenerator.png'
+ import teamprofilegen from '../../assets/images/Teamprofilegen.png'
+ import notetaker from '../../assets/images/notetaker.png'
+ import employeetracker  from '../../assets/images/EmployeeTracker.jpg'
+ import ecommerceback from '../../assets/images/ecommerceback.png'
+ import techblog from '../../assets/images/techblog.png'
+
+ import regextut from '../../assets/images/regextut.png'
+ import socialnetworkapi from '../../assets/images/socialnetworkapi.png'
+ import texteditor from '../../assets/images/texteditor.png'
+ import reactportfolio from '../../assets/images/reactportfolio.png'
+
+ 
  const projects = [
     {
         href: "https://github.com/Conklinj09/MERN-One",
@@ -12,7 +31,7 @@
         title: "REACT Portfolio",
         tech: "Apollo, Node, Sequelize, Express",
         class: "react-portfolio",
-        bgImage: '../images/reactportfolio.png',
+        bgImage: reactportfolio,
     },
     {
 
@@ -20,7 +39,7 @@
         title: "Progressive Web Application",
         tech: "MVC, Handlebars, Sequelize, Express",
         class: "text-editor",
-        bgImage: '../images/texteditor.png',
+        bgImage: texteditor,
     },
     {
 
@@ -28,7 +47,7 @@
         title: "Social Network API",
         tech: "Model View Controllers, Handlebars, Sequelize, Express",
         class: "social-network-api",
-        bgImage: '../images/socialnetworkapi.png',
+        bgImage: socialnetworkapi,
     },
     {
 
@@ -36,7 +55,7 @@
         title: "Algorithms",
         tech: "Regular Expressions",
         class: "regular-expressions",
-        bgImage: '../images/regextut.png',
+        bgImage: regextut,
     },
     {
 
@@ -52,7 +71,7 @@
         title: "MVC Paradigm",
         tech: "Model View Controllers, Handlebars, Sequelize, Express",
         class: "mvc-paradigm",
-        bgImage: '../images/techblog.png',
+        bgImage: techblog,
     },
     {
 
@@ -60,7 +79,7 @@
         title: "Object Relational Mapping",
         tech: "Express, Sequelize, MySQL",
         class: "e-commerce-back-end",
-        bgImage: '../images/ecommerceback.png',
+        bgImage: ecommerceback,
     },
     {
 
@@ -68,7 +87,7 @@
         title: "CMS System",
         tech: "Node, Inquirer, MySQL",
         class: "cms-system",
-        bgImage: '../images/EmployeeTracker.jpg',
+        bgImage: employeetracker,
     },
     {
 
@@ -76,7 +95,7 @@
         title: "Note Taker",
         tech: "JSON, Express",
         class: "note-taker",
-        bgImage: '.n/images/notetaker.png',
+        bgImage: notetaker,
     },
     {
 
@@ -84,7 +103,7 @@
         title: "Team Profile Generator",
         tech: "Jest, Inquirer",
         class: "team-profile-generator",
-        bgImage: '../images/Teamprofilegen.png',
+        bgImage: teamprofilegen,
     },
     {
 
@@ -92,7 +111,7 @@
         title: "Professional README Generator",
         tech: "Node",
         class: "professional-readme-generator",
-        bgImage: '../images/Proreadmegenerator.png',
+        bgImage: proreadmegen,
     },
     {
 
@@ -100,7 +119,7 @@
         title: "Flick Genie",
         tech: "HTML, CSS, API",
         class: "flick-genie",
-        bgImage: '../images/flickgenie.jpg',
+        bgImage: flickgenie,
     },
     {
 
@@ -108,7 +127,7 @@
         title: "Weather Dashboard",
         tech: "HTML, CSS, Jquery",
         class: "weather-dashboard",
-        bgImage: '../images/Weather-Dashboard.png',
+        bgImage: weatherdashboard,
     },
     {
 
@@ -116,7 +135,7 @@
         title: "Work Day Scheduler",
         tech: "HTML, CSS, Jquery",
         class: "work-day-scheduler",
-        bgImage: '../images/Workday-Scheduler.jpeg',
+        bgImage: workdayscheduler,
     },
     {
 
@@ -124,7 +143,7 @@
         title: "Code Quiz",
         tech: "JS/Css",
         class: "coding-quiz",
-        bgImage: '../images/Coding-Quiz.jpg',
+        bgImage: codequiz,
 
     },
     {
@@ -132,7 +151,7 @@
         title: "Password Generator",
         tech: "JS/Css",
         class: "password-generator",
-        bgImage: '../images/Password-Generator.jpg',
+        bgImage: passgen,
     },
     {
 
@@ -140,7 +159,7 @@
         title: "Portfolio Website",
         tech: "JS/Css",
         class: "portfolio-website",
-        bgImage: '../images/Horiseon.png',
+        bgImage: seo,
     }
 ]
 
@@ -150,9 +169,10 @@ function Portfolio () {
           {
               projects.map((project, i) => {
                   return (
-                      <section key={`project${i}`}>
+                      <section className="project" key={`project${i}`}>
                           <a href={project.href} className={`flex-item ${project.class}`}>
                               <div>
+                                <img className="project-image" src={project.bgImage} /> 
                                   <h3>{project.title}</h3>
                                   <p>{project.tech}</p>
                               </div>
