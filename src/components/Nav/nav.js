@@ -56,8 +56,8 @@ function Nav(props) {
   return (    
       <nav>
         <ul className="flex-row">
-          {pages.map((Page) => (
-           <li>
+          {pages.map((Page, i) => (
+           <li key={`${Page.name}-${i}`}>
             <Button theme="pink" onClick={clickMe} 
               className={`mx-5 ${
                 currentPage.name === Page.name && 'navActive'
