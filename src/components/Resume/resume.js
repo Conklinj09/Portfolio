@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Page, Text, View, Document, StyleSheet, pdfjs } from 'react-pdf';
 import dev_resume from '../../assets/resume/Developer_Resume.pdf';
+import './resume.css';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.js`
 // import ReactPDF from '@react-pdf';
@@ -23,10 +24,18 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/2
 // Create Document Component
 const Resume = () => {
   const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(2);
+  const [pageNumber, setPageNumber] = useState(1);
 
-  function moveLeft () {
-    setPageNumber(pageNumber-1)
+  function prevPage () {
+    if (pageNumber > 0) {
+      setPageNumber(pageNumber-1)
+    }
+  }
+
+  function nextPage() {
+    if (pageNumber < 3) {
+      setPageNumber(pageNumber + 1);
+    }
   }
 
   function onDocumentLoadSuccess({numPages}) {
@@ -34,15 +43,29 @@ const Resume = () => {
   }
 
   return (
-    <div>
-      <button onClick={moveLeft}>Left</button>
-  <Document  file={dev_resume} onLoadError={console.error} onLoadSuccess={onDocumentLoadSuccess}>
-    <Page pageNumber={pageNumber} >
-</Page>
-  </Document>
-      <p> Page {pageNumber} of {numPages} </p>
-    </div>
-  )
+		<div id='resume'>
+      <div className='pdfButtons'>
+			  <button onClick={prevPage}>Prev</button>
+			  <button onClick={nextPage}>Next</button>
+      </div>
+      <div>
+        <Document
+          file={dev_resume}
+          onLoadError={console.error}
+          onLoadSuccess={onDocumentLoadSuccess}
+          >
+          <Page 
+            pageNumber={pageNumber} 
+            renderAnnotationLayer={false}
+            renderTextLayer={false}
+            />
+        </Document>
+      </div>
+			<p>
+				Page {pageNumber} of {numPages}
+			</p>
+		</div>
+	);
 
   
 }

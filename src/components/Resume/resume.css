@@ -1,0 +1,15 @@
+canvas {
+    margin-inline: auto;
+    border: 1px solid black;
+    box-shadow: 5px 2px 2px #6c6c6c;
+  }
+  
+  #resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .pdfButtons {
+    margin-inline: auto;
+  }
