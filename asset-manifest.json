@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.f4a36d69.css",
+    "main.js": "/Portfolio/static/js/main.934d2c5f.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Horiseon.png": "/Portfolio/static/media/Horiseon.b8307bdf80d9074c69ce.png",
+    "static/media/cover-image.jpg": "/Portfolio/static/media/cover-image.3f4b8a47f17655a4ac17.jpg",
+    "static/media/reactportfolio.png": "/Portfolio/static/media/reactportfolio.abcc51b2d06990758d33.png",
+    "static/media/Weather-Dashboard.png": "/Portfolio/static/media/Weather-Dashboard.3d2c67210f7de9fe3b25.png",
+    "static/media/headshot.jpg": "/Portfolio/static/media/headshot.804a12cb8b7cc1c5192a.jpg",
+    "static/media/Proreadmegenerator.png": "/Portfolio/static/media/Proreadmegenerator.2293b5cc6423d1731dbd.png",
+    "static/media/socialnetworkapi.png": "/Portfolio/static/media/socialnetworkapi.198027ce85f83131652a.png",
+    "static/media/techblog.png": "/Portfolio/static/media/techblog.f1b5207538c69f65ef3c.png",
+    "static/media/flickgenie.jpg": "/Portfolio/static/media/flickgenie.7a5218e942f391abcd60.jpg",
+    "static/media/Teamprofilegen.png": "/Portfolio/static/media/Teamprofilegen.d42818f625523df4b754.png",
+    "static/media/cover-image1.jpg": "/Portfolio/static/media/cover-image1.5ff0a7600bae7cd50d00.jpg",
+    "static/media/regextut.png": "/Portfolio/static/media/regextut.6978e5f0ec7bff57a2e7.png",
+    "static/media/Workday-Scheduler.jpeg": "/Portfolio/static/media/Workday-Scheduler.101c7af49cfac342c367.jpeg",
+    "static/media/Developer_Resume.pdf": "/Portfolio/static/media/Developer_Resume.14b9cdfc543886a1d4d9.pdf",
+    "static/media/Coding-Quiz.jpg": "/Portfolio/static/media/Coding-Quiz.308931be546f75ba1257.jpg",
+    "static/media/ecommerceback.png": "/Portfolio/static/media/ecommerceback.d6074e61d35f498cf2da.png",
+    "static/media/EmployeeTracker.jpg": "/Portfolio/static/media/EmployeeTracker.acf58181dda90a44a05a.jpg",
+    "static/media/texteditor.png": "/Portfolio/static/media/texteditor.713d3ad4ad1471af9df1.png",
+    "static/media/Password-Generator.jpg": "/Portfolio/static/media/Password-Generator.17b6fd261355a2b5cbfd.jpg",
+    "static/media/notetaker.png": "/Portfolio/static/media/notetaker.b10d5955f7052c990433.png",
+    "index.html": "/Portfolio/index.html",
+    "main.f4a36d69.css.map": "/Portfolio/static/css/main.f4a36d69.css.map",
+    "main.934d2c5f.js.map": "/Portfolio/static/js/main.934d2c5f.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4a36d69.css",
+    "static/js/main.934d2c5f.js"
+  ]
+}
